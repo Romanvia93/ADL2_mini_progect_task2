@@ -37,9 +37,6 @@ streamlit run Group3_classify_fashion_image.py
 5. Click the "Classify" button to perform the classification.
 6. The app will display the preprocessed image, the predicted fashion category, and the corresponding label for the uploaded image.
 
-## Example
-
-
 ## Additional Information
 - The load_and_convert function loads an image, converts it to grayscale, and resizes it to a size of 28x28 pixels. This preprocessing step ensures compatibility with the trained model.
 - The predict function performs the classification by feeding the preprocessed image to the model and extracting the predicted category. It displays the preprocessed image, the predicted category, and the corresponding label using the Streamlit framework.
