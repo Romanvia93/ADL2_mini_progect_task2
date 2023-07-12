@@ -16,7 +16,6 @@ python -m venv venv
 source venv/Scripts/activate 
 ```
 3. To run this project, you need to have the following dependencies installed:
-
 - streamlit
 - tensorflow
 - numpy
