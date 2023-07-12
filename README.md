@@ -1,5 +1,10 @@
 # Fashion Item Classification App
-This Python project is a simple web application built using Streamlit that allows you to classify fashion items based on input images. The app uses a pre-trained TensorFlow model to perform the classification. Here's how the app works:
+This Python project is a simple web application built using Streamlit that allows you to classify fashion items based on input images. The app uses a pre-trained TensorFlow model to perform the classification. 
+#### The project is available
+ [Fashion Item Classification App](https://awesomemimiprojectdl2.streamlit.app/)
+
+
+Here's how the app works:
 
 ## Installation
 1. Create virtual environment (it needs for library consistency). 
