@@ -4,10 +4,10 @@ import numpy as np
 
 
 def load_and_convert(input_path):
-    '''
-    This functions load an image from input path,
-    convert it to grayscale and resize it to (28, 28)
-    '''
+    """
+    This function loads an image from the input path,
+    converts it to grayscale, and resizes it to (28, 28).
+    """
     input_image = tf.keras.utils.load_img(
         input_path,
         color_mode='grayscale',
@@ -19,9 +19,9 @@ def load_and_convert(input_path):
 
 
 def predict(category_list, model, uploaded):
-    '''
-    This function classifies the image and show the result in streamlit
-    '''
+    """
+    This function classifies the image and shows the result in Streamlit.
+    """
     if uploaded:
         input_image = load_and_convert(uploaded)
         st.image(input_image, caption="Preprocessed Image (28x28 grayscale)")
@@ -36,23 +36,26 @@ def predict(category_list, model, uploaded):
 
 def download_model(path):
     """
-    download preapred model
+    Download the pre-trained model.
     """
     model = tf.keras.models.load_model(path)
     return model 
 
 
 def text_block():
-    st.title("Classify Fashion Item on Image")
+    st.title("Classify Fashion Item from Image")
     st.text("")
-    st.text("This is an app to predict the fashion category of the input image.")
-    st.text("Caterogies: T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag, Ankel boot")
-    st.text("Note: Any input image will be preprocessed to a 28x28 grayscale image.")
+    st.text("This app predicts the fashion category of an input image.")
+    st.text("Categories: T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag, Ankle boot")
+    st.text("Note: The input image will be preprocessed as a 28x28 grayscale image.")
     st.text("")
 
 
 def main():
-    category_list = ["T-shirt/top", "Trouser", "Pullover", "Dress", "Coat", "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"]
+    category_list = [
+        "T-shirt/top", "Trouser", "Pullover", "Dress", "Coat",
+        "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"
+    ]
     model = download_model("model/mnist_fashion_saved_model")
     text_block()
     uploaded = st.file_uploader("Upload an image", type=['png', 'jpeg', 'jpg'])
