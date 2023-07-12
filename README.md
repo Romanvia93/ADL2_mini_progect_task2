@@ -11,7 +11,7 @@ Here's how the app works:
 ```sh
 python -m venv venv
 ```
-2. Activate venv
+2. Activate virtual environment
 ```sh
 source venv/Scripts/activate 
 ```
@@ -19,6 +19,7 @@ source venv/Scripts/activate
 - streamlit
 - tensorflow
 - numpy
+
 You can install the dependencies by running the following command:
 ```sh
 pip install -r requirements.txt
@@ -47,7 +48,7 @@ streamlit run Group3_classify_fashion_image.py
 
 
 ## Additional Information
-- The load_and_convert function loads an image, converts it to grayscale, and resizes it to a size of 28x28 pixels. This preprocessing step ensures compatibility with the trained model.
-- The predict function performs the classification by feeding the preprocessed image to the model and extracting the predicted category. It displays the preprocessed image, the predicted category, and the corresponding label using the Streamlit framework.
+- The **load_and_convert** function loads an image, converts it to grayscale, and resizes it to a size of 28x28 pixels. This preprocessing step ensures compatibility with the trained model.
+- The **predict** function performs the classification by feeding the preprocessed image to the model and extracting the predicted category. It displays the preprocessed image, the predicted category, and the corresponding label using the Streamlit framework.
 
 Enjoy using the Fashion Item Classification App!
