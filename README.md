@@ -28,7 +28,7 @@ streamlit run Group3_classify_fashion_image.py
 ```
 2. The app will launch in your web browser.
 3. The app provides a brief description of its functionality and the categories it can classify.
-4. Upload an image by clicking on the "Upload an image" button and selecting an image file (PNG, JPEG, or JPG).
+4. Upload an image by clicking on the "Upload an image" button and selecting an image file (PNG, JPEG, or JPG). You can use eimage example in images foler
 5. Click the "Classify" button to perform the classification.
 6. The app will display the preprocessed image, the predicted fashion category, and the corresponding label for the uploaded image.
 
